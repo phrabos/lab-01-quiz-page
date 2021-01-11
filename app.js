@@ -32,5 +32,25 @@ quizButton.addEventListener("click",() => {
     }
     console.log(correctAnswers)
  
+    const secondAnswer = prompt("did anyone ever finish in less than 24 hours?");
+   if (secondAnswer.charAt(0).toUpperCase() === 'Y'){
+       console.log("you got it right");
+       ++correctAnswers;
+   }
+   else {
+       console.log("failed!!!")
+   }
+   console.log(secondAnswer)
+   console.log(correctAnswers)
 
+   const thirdAnswer = prompt("do you have more than 36 hours to finish the race?");
+   if (thirdAnswer.charAt(0).toUpperCase() !== 'Y'){
+       console.log("you got it right");
+       ++correctAnswers;
+   }
+   else {
+       console.log("failed!!!")
+   }
+   console.log(thirdAnswer)
+   console.log(correctAnswers)
 })
