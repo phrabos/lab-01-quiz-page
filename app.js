@@ -8,5 +8,11 @@ const secretDiv = document.getElementById("secret-div")
 quizButton.addEventListener("click",() => {
     alert("Welcome to the quiz!");
 
+    const confirmation = confirm("Do you want to proceed")
+    if (!confirmation) {
+        console.log("clicked cancel")
+        return;
+    }
+    console.log(confirmation)
 
 })
