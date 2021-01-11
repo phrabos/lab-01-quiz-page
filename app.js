@@ -15,4 +15,9 @@ quizButton.addEventListener("click",() => {
     }
     console.log(confirmation)
 
+    const firstName = prompt("What is your first name?")
+    const lastName = prompt("What is your last name?")
+    console.log(firstName, lastName);
+
+
 })
