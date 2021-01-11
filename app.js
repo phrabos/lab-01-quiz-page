@@ -53,4 +53,8 @@ quizButton.addEventListener("click",() => {
    }
    console.log(thirdAnswer)
    console.log(correctAnswers)
+
+   const resultsString = `Thank you for taking the quiz ${firstName} ${lastName}, you got ${correctAnswers} answers right!`;
+   console.log(resultsString);
+   secretDiv.textContent = resultsString;
 })
