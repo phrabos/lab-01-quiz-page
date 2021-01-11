@@ -19,5 +19,8 @@ quizButton.addEventListener("click",() => {
     const lastName = prompt("What is your last name?")
     console.log(firstName, lastName);
 
+    const firstAnswer = prompt("is the Spartathlon a foot race?");
+    console.log(firstAnswer)
+
 
 })
