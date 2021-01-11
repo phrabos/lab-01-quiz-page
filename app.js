@@ -15,6 +15,7 @@ quizButton.addEventListener("click",() => {
     }
     console.log(confirmation)
 
+    let correctAnswers = 0;
     const firstName = prompt("What is your first name?")
     const lastName = prompt("What is your last name?")
     console.log(firstName, lastName);
@@ -22,5 +23,14 @@ quizButton.addEventListener("click",() => {
     const firstAnswer = prompt("is the Spartathlon a foot race?");
     console.log(firstAnswer)
 
+    if (firstAnswer.charAt(0).toUpperCase() === 'Y'){
+        console.log("you got it right");
+        ++correctAnswers;
+    }
+    else {
+        console.log("failed!!!")
+    }
+    console.log(correctAnswers)
+ 
 
 })
