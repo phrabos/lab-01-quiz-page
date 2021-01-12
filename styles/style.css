@@ -18,8 +18,9 @@ body {
     --gutter: 30px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 1.25em;
+    background-color: #fcf8ec;
 }
 
 main {
@@ -40,7 +41,7 @@ main {
 
 } */
 section {
-    background-color: var(--color5);
+    background-color: #79a3b1;;
     width: 1000px;
     max-width: 80%;
     display: flex;
@@ -59,8 +60,10 @@ header {
     display: flex;
     justify-content: flex-end;
     background-color: var(--color3);
-    height: var(--header-height);
+    height: 200px;
     box-shadow: var(--shadow);
+    align-items: center;
+    justify-content: center;
 }
 
 footer {
@@ -85,7 +88,8 @@ h2 {
 }
 
 header img {
-    height: var(--header-height);
+    height: 175px;
+   
 }
 
 
@@ -127,15 +131,32 @@ footer {
     }
 
   }
+  ul {
+      display: flex;
+      flex-direction: column;
+      /* align-items: center;
+      justify-content: center; */
+  }
+  ol {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: flex-start;
+  }
   button {
       margin-bottom: 10px;
+      margin-top: 10px;
       height: 50px;
       font-size: 20px;
-      
+      background-color: #d0e8f2;
+
+  }
+  .runner {
+      width: 100%;
   }
   .green {
-      background-color: greenyellow;
-      font-size: 1.5em;
+    background-color: greenyellow;
+    font-size: 1.5em;
     font-weight: 600;
   }
   .yellow {
