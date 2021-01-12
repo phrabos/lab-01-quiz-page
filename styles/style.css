@@ -29,7 +29,16 @@ main {
     align-items: center;
     margin-bottom: calc(var(--footer-height));
 }
+/* .background {
+    background-size: cover;
+    background-image: url(./spartathlon-logo.jpg);
+    opacity: .1;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
 
+} */
 section {
     background-color: var(--color5);
     width: 1000px;
@@ -43,9 +52,8 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
-    background-size: cover;
-
 }
+
 
 header {
     display: flex;
@@ -119,3 +127,8 @@ footer {
     }
 
   }
+
+section .runner {
+    /* width: 100%; */
+    /* align-self: flex-start; */
+}
