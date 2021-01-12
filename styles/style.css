@@ -43,6 +43,8 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
+    background-size: cover;
+
 }
 
 header {
