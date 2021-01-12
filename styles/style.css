@@ -127,8 +127,24 @@ footer {
     }
 
   }
-
-section .runner {
-    /* width: 100%; */
-    /* align-self: flex-start; */
+  button {
+      margin-bottom: 10px;
+      height: 50px;
+      font-size: 20px;
+      
+  }
+  .green {
+      background-color: greenyellow;
+      font-size: 1.5em;
+    font-weight: 600;
+  }
+  .yellow {
+    background-color: yellow;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.red {
+    background-color: tomato;
+    font-size: 1.5em;
+    font-weight: 600;
 }

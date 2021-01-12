@@ -2,6 +2,7 @@
 import { countsAsYes } from "./utils.js";
 const quizButton = document.getElementById("launch-quiz")
 const secretDiv = document.getElementById("secret-div")
+const percentDiv = document.getElementById("percent-div")
 // initialize state
 
 
@@ -27,4 +28,19 @@ quizButton.addEventListener("click",() => {
 
    const resultsString = `Thank you for taking the quiz ${firstName} ${lastName}, you got ${correctAnswers} answers right!`;
    secretDiv.textContent = resultsString;
+
+   if (correctAnswers === 3){
+       secretDiv.classList.add("green");
+       percentDiv.classList.add("green")
+   }
+   else if (correctAnswers === 2){
+       secretDiv.classList.add("yellow");
+       percentDiv.classList.add("yellow");
+   }
+    else {
+        secretDiv.classList.add("red");
+        percentDiv.classList.add("red");
+    }
+
+   percentDiv.textContent = `Your percent correct is ${Math.floor(correctAnswers /3*100)}\%`;
 })
